@@ -4,10 +4,10 @@
 <br/>GmailAPI.php - основной класс, содержащий набор функций для взаимодействия с API Gmail
 <br/>clearMailBox.php - удаляет старые сообщения из указанных почтовых ящиков
 <br/>unDeliveredMes.php - находит и обрабатывает отчёты о не доставленных письмах
-<br/>Для того, чтобы эти скрипты работали, Вам необходимо настроить аккаунт G Suite, как описано в статье на habr.com
+<br/>Для того, чтобы эти скрипты работали, Вам необходимо настроить аккаунт G Suite, как описано в статье https://habr.com/ru/post/516408/
 
 <br/>Dealing with Gmail API for email management using service account
 <br/>GmailAPI.php - main class with finctions for dealing with API Gmail
 <br/>clearMailBox.php - deletes old messages from specified mailbox
 <br/>unDeliveredMes.php - find reports about undelivered messages
-<br/>For using this scripts you need to set your G Suite account as described in habr.com
+<br/>For using this scripts you need to set your G Suite account as described in https://habr.com/ru/post/516408/
