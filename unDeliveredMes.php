@@ -87,9 +87,18 @@ if (count($arrClientEmails)) {
             }
             $strMessage .= '<br/>Пожалуйста, уточните у клиента актуальность этого адреса электронной почты.<br/><br/>
                 Это письмо было отправлено автоматически, не отвечайте на него';
-
-            $objMailSender = new mailSender();
+            if (empty($objMailSender)) $objMailSender = new mailSender();
             $objMailSender->sendMail('b@domain.com','Проверьте email клиента',$strMessage);
         }
     }
+}
+
+if (count($arrErrors)){
+    $strTo = 'my_email@domain.com';
+    $strSubj = 'Ошибка при обработке отчётов о недоставленных письмах';
+    $strMessage = 'При обработке отчётов о недоставленных письмах возникли следующие ошибки:'.
+        '<ul><li>'.implode('</li><li>',$arrErrors).'</li></ul>'.
+        '<br/>URL: '.filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL);
+    if (empty($objMailSender)) $objMailSender = new mailSender();
+    $objMailSender->sendMail($strTo,$strSubj,$strMessage);
 }
