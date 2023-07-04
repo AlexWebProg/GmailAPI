@@ -1,7 +1,28 @@
 {
+    "name": "alexwebprog/laravel-boxberry",
+    "description": "Laravel Boxberry SDK",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": [
+        "laravel boxberry",
+        "laravel",
+        "boxberry"
+    ],
+    "authors": [
+        {
+            "name": "Alexey Povarov",
+            "email": "povarovalexey@gmail.com",
+            "homepage": "https://github.com/AlexWebProg/"
+        }
+    ],
+    "homepage": "https://github.com/AlexWebProg/laravel-boxberry/",
     "require": {
+        "php": ">=7.0",
         "google/apiclient": "^2.0"
     },
-    "require-dev": {
+    "autoload": {
+        "psr-4": {
+            "Alexwebprog\\GMailAPI\\": "src"
+        }
     }
 }
