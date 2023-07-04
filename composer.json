@@ -1,12 +1,12 @@
 {
-    "name": "alexwebprog/laravel-boxberry",
-    "description": "Laravel Boxberry SDK",
+    "name": "alexwebprog/gmailapi",
+    "description": "GMail API",
     "minimum-stability": "stable",
     "license": "MIT",
     "keywords": [
-        "laravel boxberry",
-        "laravel",
-        "boxberry"
+        "GMail API",
+        "GMail",
+        "service account"
     ],
     "authors": [
         {
@@ -15,7 +15,7 @@
             "homepage": "https://github.com/AlexWebProg/"
         }
     ],
-    "homepage": "https://github.com/AlexWebProg/laravel-boxberry/",
+    "homepage": "https://github.com/AlexWebProg/GmailAPI/",
     "require": {
         "php": ">=7.0",
         "google/apiclient": "^2.0"
