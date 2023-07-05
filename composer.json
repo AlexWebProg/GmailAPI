@@ -17,7 +17,7 @@
     ],
     "homepage": "https://github.com/AlexWebProg/GmailAPI/",
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.4",
         "google/apiclient": "^2.0"
     },
     "autoload": {
